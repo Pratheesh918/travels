@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <div class="section">
+        <div><h1 id="one">Travel</h1></div>
+        <div id="same" onclick="home()">Home</div>
+        <div id="sames" onclick="about()">About</div>
+        <div id="samess" onclick="popular()">Popular</div>
+        <div id="samesss"  onclick="explore()">Explore</div>
+        <div id="menu" onclick="worked()"><i class="fa-sharp fa-solid fa-bars"></i></div>
+    </div>
+    <div class="sidenavbar">
+        <h5 id="sides" onclick="closed()">X</h5> 
+    <h5 id="side" onclick="home()">Home</h5>
+    <h5 id="side" onclick="about()">About</h5>
+    <h5 id="side" onclick="popular()">Popular</h5>
+    <h5 id="side" onclick="explore()">Explore</h5>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <i class="fa-solid fa-leaf"></i>
+    <br>
+    <br>
+    <div class="last">
+        <div><h4 class="to">Travel</h4>
+            <p class="p8">Travel with us and explore</p>
+            <p class="p9">The world without limits</p>
+        </div>
+        <div><h4 class="to">About</h4>
+            <p class="psame">About Us</p>
+            <p class="psame">Features</p>
+            <p class="psame">News and Blog</p>
+        </div>
+        <div><h4 class="to">Company</h4>
+            <p class="psame">FAQs</p>
+            <p class="psame">History</p>
+            <p class="psame">Testimonials</p>
+        </div>
+        <div><h4 class="to">Contact</h4>
+            <p class="psame">Call Center</p>
+            <p class="psame">Support Center</p>
+            <p class="psame">Contact Us</p>
+        </div>
+        <div><h4 class="to">Support</h4>
+            <p class="psame">Privacy</p>
+            <p class="psame">Terms and Services</p>
+            <p class="psame">Payments</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-square-whatsapp"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i>
+    <script>
+        var a=document.querySelector(".sidenavbar")
+        function worked(){
+            a.style.left="0%"
+        }
+        function closed(){
+            a.style.left="-90%"
+        }
+        function about(){
+            window.location.assign("about.html")
+        }
+        function home(){
+            window.location.assign("index.html")
+        }
+        function popular(){
+            window.location.assign("popular.html")
+        }
+        function explore(){
+            window.location.assign("explore.html")
+        }
+    </script>
+
+
+</body>
+</html>

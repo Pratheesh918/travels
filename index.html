@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <div class="section">
+        <div><h1 id="one">Travel</h1></div>
+        <div id="same">Home</div>
+        <div id="sames" onclick="about()">About</div>
+        <div id="samess" onclick="popular()">Popular</div>
+        <div id="samesss"  onclick="explore()">Explore</div>
+        <div id="menu" onclick="worked()"><i class="fa-sharp fa-solid fa-bars"></i></div>
+    </div>
+    <div class="sidenavbar">
+        <h5 id="sides" onclick="closed()">X</h5> 
+    <h5 id="side" onclick="home()">Home</h5>
+    <h5 id="side" onclick="about()">About</h5>
+    <h5 id="side" onclick="popular()">Popular</h5>
+    <h5 id="side" onclick="explore()">Explore</h5>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <p class="para">Welcome To Travel</p>
+    <h1 class="header">Explore </h1>
+    <h1 class="head">The World</h1>
+    <p class="parag">Live the trips exploring the world discover paradises,islands mountains and much more,get your trip now</p>
+    <h3 class="paint" onclick="about()">Start the journey<i class="fa-solid fa-arrow-right"></i></h3>
+    <br>
+    <br>
+    <div class="imaged">
+        <div>
+            <img src="travel3.jpeg"><br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p class="a1">Iceland</p>
+        </div>
+        <div>
+            
+                <img src="travel4.jpeg"><br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p class="a1">Italy</p>
+            </div>
+            <div>
+                <img src="travel5.jpeg"><br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p class="a1">Croatia</p>
+            </div>
+        
+        <div>
+            <img src="travel6.jpeg"><br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p class="a1">Spain</p>
+        </div>
+    </div>
+    <script>
+        var a=document.querySelector(".sidenavbar")
+        function worked(){
+            a.style.left="0%"
+        }
+        function closed(){
+            a.style.left="-90%"
+        }
+        function about(){
+            window.location.assign("about.html")
+        }
+        function home(){
+            window.location.assign("index.html")
+        }
+        function popular(){
+            window.location.assign("popular.html")
+        }
+        function explore(){
+            window.location.assign("explore.html")
+        }
+    </script>
+
+
+</body>
+</html>

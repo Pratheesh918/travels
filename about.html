@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <div class="section">
+        <div><h1 id="one">Travel</h1></div>
+        <div id="same" onclick="home()">Home</div>
+        <div id="sames" onclick="about()">About</div>
+        <div id="samess" onclick="popular()">Popular</div>
+        <div id="samesss" onclick="explore()">Explore</div>
+        <div id="menu" onclick="worked()"><i class="fa-sharp fa-solid fa-bars"></i></div>
+    </div>
+    <div class="sidenavbar">
+        <h5 id="sides" onclick="closed()">X</h5> 
+    <h5 id="side" onclick="home()">Home</h5>
+    <h5 id="side" onclick="about()">About</h5>
+    <h5 id="side" onclick="popular()">Popular</h5>
+    <h5 id="side" onclick="explore()">Explore</h5>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="aboutsection">
+        <div class="p2"><h1 class="small">Learn More</h1><h1 class="small">About Travel</h1>
+        <p class="p1">"The world is a book, and those who do not travel read only one page." – Augustine of Hippo
+            "Travel is the only thing you buy that makes you richer."
+            "To travel is to take a journey into yourself." – Danny Kaye
+            "Adventure is worthwhile." – Aesop
+            "Not all those who wander are lost." – J.R.R. Tolkien
+            "The journey, not the arrival, matters." – T.S. Eliot
+            "Travel makes one modest. You see what a tiny place you occupy in the world." – Gustave Flaubert
+            "Take only memories, leave only footprints." – Chief Seattle
+            "Life is short, and the world is wide."
+            "Travel far enough, you meet yourself." – David Mitchell</p>
+            <p class="explore" onclick="popular()">Explore Travel <i class="fa-solid fa-arrow-right"></i></p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div>
+            <img src="travel7.jpeg"class="sure">
+            <p class="nether">NetherLand</p>
+        </div>
+    </div>
+    <script>
+        var a=document.querySelector(".sidenavbar")
+        function worked(){
+            a.style.left="0%"
+        }
+        function closed(){
+            a.style.left="-90%"
+        }
+        function about(){
+            window.location.assign("about.html")
+        }
+        function home(){
+            window.location.assign("index.html")
+        }
+        function popular(){
+            window.location.assign("popular.html")
+        }
+        function explore(){
+            window.location.assign("explore.html")
+        }
+    </script>
+
+
+</body>
+</html>
